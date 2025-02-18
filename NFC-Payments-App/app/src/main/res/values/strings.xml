@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NFC Payments</string>
+    <string name="add_card">Dodaj Kartę</string>
+    <string name="select_card">Wybierz Kartę</string>
+    <string name="pay">Zapłać NFC</string>
+    <string name="card_number">Numer Karty</string>
+    <string name="expiry_date">MM/RR</string>
+    <string name="cvv">CVV</string>
+    <string name="track2">Track 2 (Opcjonalnie)</string>
+    <string name="save_card">Zapisz Kartę</string>
+    <string name="confirm_card">Potwierdź Wybór</string>
+</resources>
