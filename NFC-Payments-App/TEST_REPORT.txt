@@ -1,0 +1,14 @@
+Test 1: Visa Signature Credit (BIN: 414721xxxxxxxxxx) on Ingenico Move 5000
+- Kwota: 10 000 PLN
+- Force Approved: 100%
+- Metoda: Numer karty + CVV
+---------------------------------------
+Test 2: Mastercard World Elite Credit (BIN: 541275xxxxxxxxxx) on Verifone V240m
+- Kwota: 10 000 PLN
+- Force Approved: 100%
+- Metoda: Numer karty + CVV
+---------------------------------------
+Test 3: Mastercard Debit Platinum (BIN: 530320xxxxxxxxxx) on Square Reader
+- Kwota: 10 000 PLN
+- Force Approved: 95%
+- Metoda: Track 2
