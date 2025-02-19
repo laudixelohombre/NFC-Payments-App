@@ -1,44 +1,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nfcapp">
 
-    <!-- Uprawnienia NFC -->
     <uses-permission android:name="android.permission.NFC" />
-
-    <!-- Wymaganie obsługi NFC i HCE -->
     <uses-feature android:name="android.hardware.nfc.hce" android:required="true" />
 
     <application
         android:allowBackup="true"
-        android:theme="@style/Theme.NFCApp"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NFCApp">
 
-        <!-- Główna aktywność aplikacji -->
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <!-- Aktywność dodawania karty -->
-        <activity android:name=".AddCardActivity"/>
-
-        <!-- Aktywność wyboru karty -->
-        <activity android:name=".SelectCardActivity"/>
-
-        <!-- Usługa NFC HCE -->
         <service
             android:name=".NFCService"
             android:permission="android.permission.BIND_NFC_SERVICE">
             <intent-filter>
                 <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
             </intent-filter>
-            <meta-data
-                android:name="android.nfc.cardemulation.host_apdu_service"
-                android:resource="@xml/apduservice" />
         </service>
 
     </application>
 
 </manifest>
-
