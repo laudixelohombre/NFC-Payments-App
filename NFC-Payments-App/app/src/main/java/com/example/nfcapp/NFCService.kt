@@ -8,13 +8,13 @@ class NFCService : HostApduService() {
         return when {
             commandApdu.isSelectAidApdu() -> selectAidResponse()
             commandApdu.isGenerateAcApdu() -> ForceApproved.generateApprovedCryptogram()
-            else -> byteArrayOf(0x6A.toByte(), 0x00.toByte()) // Błąd APDU
+            else -> byteArrayOf(0x6A.toByte(), 0x00.toByte())
         }
     }
 
     override fun onDeactivated(reason: Int) {}
 
     private fun selectAidResponse(): ByteArray {
-        return byteArrayOf(0x90.toByte(), 0x00.toByte()) // Success
+        return byteArrayOf(0x90.toByte(), 0x00.toByte())
     }
 }
